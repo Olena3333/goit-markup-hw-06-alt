@@ -323,7 +323,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
           </ul>
         </div>
       </section>
-      <!-- customers ------------------------------>
+      <!-- customers -->
       <section class="customers">
         <div class="container container-customers">
           <h2 class="section-title">Customers</h2>
@@ -377,8 +377,8 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     <footer class="footer">
       <div class="container footer-content">
         <div class="footer-left">
-          <a href="./index.html" class="logo link logo-footer">
-            Web<span class="logo-patfooter logo-footer">Studio</span>
+          <a href="./index.html" class="link logo-footer">
+            Web<span class="logo-footer-patfooter">Studio</span>
           </a>
           <p class="text-footer">
             Increase the flow of customers and sales for your business with
@@ -418,27 +418,45 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-text">Subscribe</p>
+          <form class="footer-subscribe-form" action="">
+            <label class="footer-subscribe-fild">
+              <input
+                class="footer-subscribe-form-input"
+                type="text"
+                type="email"
+                name="user_email"
+                required
+                placeholder="E-mail"
+              />
+            </label>
+            <span class="reviev-form-input-wrapper">
+              <button class="footer-subscribe-form-btn" type="submit">
+                Subscribe
+              </button>
+              <svg
+                class="reviev-form-field-icon"
+                width="24"
+                height="24"
+                aria-label="User alatar icon"
+              >
+                <use href="./images/icons.svg#icon-Frame-3"></use>
+              </svg>
+            </span>
+          </form>
+        </div>
       </div>
     </footer>
-    <!-- modal window ------------------------------>
-    <div class="backdrop" data-modal>
-      <div class="modal-window is-hidden">
-        <button class="modal-close-btn" type="button" data-modal-close>
-          <svg
-            class="modal-close-btn-icon"
-            width="8"
-            height="8"
-            aria-label="close icon"
-          >
-            <use href="./images/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
-
-        <form class="review-form" action="">
+    <!-- modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-window">
+        <form class="review-form">
           <p class="reviev-form-discription">
             Leave your contacts and we will call you back
           </p>
-          <label class="reviev-form-field" for="">
+          <label class="reviev-form-field">
             <span class="reviev-form-field-deskription">Name<sup>*</sup> </span>
             <span class="reviev-form-input-wrapper">
               <input
@@ -452,14 +470,14 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
               <svg
                 class="reviev-form-field-icon"
                 width="18"
-                height="18"
+                height="24"
                 aria-label="User alatar icon"
               >
                 <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </span>
           </label>
-          <label class="reviev-form-field" for="">
+          <label class="reviev-form-field">
             <span class="reviev-form-field-deskription">Phone<sup>*</sup></span>
             <span class="reviev-form-input-wrapper">
               <input
@@ -473,14 +491,14 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
               <svg
                 class="reviev-form-field-icon"
                 width="18"
-                height="18"
+                height="24"
                 aria-label="User alatar icon"
               >
                 <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </span>
           </label>
-          <label class="reviev-form-field" for="">
+          <label class="reviev-form-field">
             <span class="reviev-form-field-deskription">Email<sup>*</sup></span>
             <span class="reviev-form-input-wrapper">
               <input
@@ -492,14 +510,14 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
               <svg
                 class="reviev-form-field-icon"
                 width="18"
-                height="18"
+                height="24"
                 aria-label="User alatar icon"
               >
                 <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </span>
           </label>
-          <label class="reviev-form-field" for="">
+          <label class="reviev-form-field">
             <span class="reviev-form-field-deskription">Comment</span>
             <span class="reviev-form-input-wrapper">
               <textarea
@@ -511,31 +529,40 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
               ></textarea>
             </span>
           </label>
-          <label class="reviev-form-field" for="">
+          <label class="reviev-form-field reviev-form-field-policy">
             <input
               class="reviev-form-checkbox-policy"
               type="checkbox"
               name="user_policy"
               required
-              width="16"
-              height="16"
             />
             <svg
-              class="review-form-own-checkbox"
+              class="reviev-form-own-checkbox"
               width="16"
               height="16"
               aria-label="checkbox"
             >
               <use
-                class="review-form-own-checkbox-icon"
+                class="reviev-form-own-checkbox-icon"
                 href="./images/icons.svg#icon-Vector"
               ></use>
             </svg>
-            I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
+            I accept the terms and conditions of the &nbsp;
+            <a class="reviev-form-own-checkbox-link">Privacy Policy</a>
           </label>
+
           <button class="reviev-form-btn" type="submit">Send</button>
         </form>
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg
+            class="modal-close-btn-icon"
+            width="8"
+            height="8"
+            aria-label="close icon"
+          >
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>

@@ -101,9 +101,6 @@ button {
 .logo-pat {
   color: var(--title-text-color);
 }
-.logo-patfooter {
-  color: #f4f4fd;
-}
 
 /*sate nav*/
 .page-header {
@@ -510,15 +507,25 @@ button {
   align-items: baseline;
 }
 .footer-left {
-  display: flex;
-  margin-right: 120px;
+  display: block;
 }
 .logo-footer {
   display: inline-block;
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-s;
+  font-size: 18px;
+  font-style: normal;
+  letter-spacing: 0.54px;
+  line-height: 1.16;
+  text-transform: uppercase;
+
   align-items: center;
   margin-bottom: 16px;
 }
-.logo .footer-content {
+.logo-footer-patfooter {
+  color: #f4f4fd;
+}
+.logo-footer .footer-content {
   display: inline-block;
   margin-bottom: 16px;
 }
@@ -534,7 +541,6 @@ button {
 .text-right {
   font-weight: 500;
   color: var(--hero-tatle-color);
-  margin-bottom: 16px;
 }
 .footer-right {
   padding-left: 120px;
@@ -565,6 +571,54 @@ button {
 }
 .social-icon-footer {
   fill: #f4f4fd;
+}
+.footer-subscribe {
+  display: block;
+  margin-right: 120px;
+}
+.footer-subscribe-text {
+  display: block;
+  padding-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.32px;
+  color: var(--hero-tatle-color);
+}
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-subscribe-form-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: #ffffff;
+}
+.footer-subscribe-form-btn {
+  display: flex;
+  justify-content: center;
+  min-width: 165px;
+  height: 40px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.64px;
+  color: var(--hero-tatle-color);
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+.reviev-form-field-icon {
+  margin-left: 16px;
 }
 /* ================ Portfolio ================ */
 .main-portfolio {
@@ -822,7 +876,7 @@ button {
 .reviev-form-field {
   display: block;
 
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 .reviev-form-field-deskription {
   display: block;
@@ -838,6 +892,7 @@ button {
   top: 50%;
   left: 16px;
   transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reviev-form-massige {
   display: block;
@@ -867,32 +922,49 @@ button {
 .reviev-form-checkbox-policy {
   position: absolute;
   appearance: none;
-
+}
+.reviev-form-field-policy {
+  display: flex;
+  align-items: center;
   font-size: 12px;
-  font-style: normal;
   line-height: 1.16; /* 116.667% */
   letter-spacing: 0.48px;
+  margin-bottom: 24px;
 }
-.review-form-own-checkbox {
-  padding: 4px;
+.reviev-form-own-checkbox {
   border-radius: 2px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
   cursor: pointer;
   margin-right: 8px;
+  padding: 2px;
 }
-
+.reviev-form-own-checkbox-icon {
+  fill: #f4f4fd;
+  display: none;
+}
 .reviev-form-checkbox-policy:checked + .reviev-form-own-checkbox {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
 }
+.reviev-form-checkbox-policy:checked + .reviev-form-own-checkbox use {
+  display: block;
+}
+.reviev-form-own-checkbox-link {
+  color: var(--iris, #4d5ae5);
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-decoration-line: underline;
+}
 
 .reviev-form-btn {
+  display: block;
+
   width: 169px;
   height: 56px;
-  padding: 14px;
+  margin: auto;
   padding: 16px 32px;
   font-size: 16px;
-  color: var(--white, #fff);
+  color: var(--hero-tatle-color);
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.64px;
@@ -900,16 +972,13 @@ button {
   text-align: center;
 
   border: none;
-
-  color: var(--text-color-theme-dark);
   background: var(--iris, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.revie-form-btn:hover,
-.revie-form-btn:focus {
+.reviev-form-btn:hover {
   background: var(--ocean, #404bbf);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
