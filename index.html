@@ -452,10 +452,20 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg
+            class="modal-close-btn-icon"
+            width="8"
+            height="8"
+            aria-label="close icon"
+          >
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="reviev-form-discription">
+          Leave your contacts and we will call you back
+        </p>
         <form class="review-form">
-          <p class="reviev-form-discription">
-            Leave your contacts and we will call you back
-          </p>
           <label class="reviev-form-field">
             <span class="reviev-form-field-deskription">Name<sup>*</sup> </span>
             <span class="reviev-form-input-wrapper">
@@ -553,16 +563,6 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
 
           <button class="reviev-form-btn" type="submit">Send</button>
         </form>
-        <button class="modal-close-btn" type="button" data-modal-close>
-          <svg
-            class="modal-close-btn-icon"
-            width="8"
-            height="8"
-            aria-label="close icon"
-          >
-            <use href="./images/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
