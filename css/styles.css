@@ -858,9 +858,6 @@ button {
 }
 
 .reviev-form-input {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
   width: 100%;
   height: 58px;
   border-radius: 4px;
@@ -887,8 +884,11 @@ button {
 }
 .reviev-form-field {
   display: block;
-
-  margin-bottom: 16px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+  color: var(--navyblue-moda);
 }
 .reviev-form-field-deskription {
   display: block;

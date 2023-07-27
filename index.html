@@ -465,33 +465,30 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
         </p>
         <form class="review-form">
           <div class="review-form-wrapper">
-            <label class="reviev-form-field" for="user_fullname">
-              Name<sup>*</sup>
-              <span class="reviev-form-input-wrapper">
-                <input
-                  class="reviev-form-input"
-                  type="text"
-                  id="user_fullname"
-                  name="user_fullname"
-                  required
-                  pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
-                  title="Olena"
-                />
-                <svg
-                  class="reviev-form-field-icon"
-                  width="18"
-                  height="24"
-                  aria-label="User alatar icon"
-                >
-                  <use href="./images/icons.svg#icon-person-black"></use>
-                </svg>
-              </span>
-            </label>
-          </div>
-          <div class="review-form-wrapper">
-            <label class="reviev-form-field" for="user_phone">
-              Phone<sup>*</sup>
-              <span class="reviev-form-input-wrapper">
+            <label class="reviev-form-field" for="user_fullname">Name</label>
+            <div class="reviev-form-input-wrapper">
+              <input
+                class="reviev-form-input"
+                type="text"
+                id="user_fullname"
+                name="user_fullname"
+                required
+                pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐʼ]+"
+                title="Olena"
+              />
+              <svg
+                class="reviev-form-field-icon"
+                width="18"
+                height="24"
+                aria-label="User alatar icon"
+              >
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+
+            <div class="review-form-wrapper">
+              <label class="reviev-form-field" for="user_phone">Phone</label>
+              <div class="reviev-form-input-wrapper">
                 <input
                   class="reviev-form-input"
                   id="user_phone"
@@ -509,13 +506,11 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
                 >
                   <use href="./images/icons.svg#icon-phone-black"></use>
                 </svg>
-              </span>
-            </label>
-          </div>
-          <div class="review-form-wrapper">
-            <label class="reviev-form-field" for="user_email"
-              >Email<sup>*</sup>
-              <span class="reviev-form-input-wrapper">
+              </div>
+            </div>
+            <div class="review-form-wrapper">
+              <label class="reviev-form-field" for="user_email">Email</label>
+              <div class="reviev-form-input-wrapper">
                 <input
                   class="reviev-form-input"
                   id="user_email"
@@ -531,46 +526,44 @@ https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
                 >
                   <use href="./images/icons.svg#icon-email-black"></use>
                 </svg>
-              </span>
-            </label>
-          </div>
-          <div class="review-form-wrapper">
-            <div class="reviev-form-input-wrapper">
-              <label class="reviev-form-field"
-                >Comment
-                <textarea
-                  class="reviev-form-massige"
-                  name="user_massige"
-                  cols="30"
-                  rows="10"
-                  placeholder="Text input"
-                ></textarea>
-              </label>
+              </div>
             </div>
-          </div>
-          <label class="reviev-form-field reviev-form-field-policy">
-            <input
-              class="reviev-form-checkbox-policy"
-              type="checkbox"
-              name="user_policy"
-              required
-            />
-            <svg
-              class="reviev-form-own-checkbox"
-              width="16"
-              height="16"
-              aria-label="checkbox"
-            >
-              <use
-                class="reviev-form-own-checkbox-icon"
-                href="./images/icons.svg#icon-Vector"
-              ></use>
-            </svg>
-            I accept the terms and conditions of the &nbsp;
-            <a class="reviev-form-own-checkbox-link">Privacy Policy</a>
-          </label>
 
-          <button class="reviev-form-btn" type="submit">Send</button>
+            <label class="reviev-form-field">
+              <p class="reviev-form-field-deskription">Comment</p>
+              <textarea
+                class="reviev-form-massige"
+                name="user_massige"
+                cols="30"
+                rows="10"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+
+            <label class="reviev-form-field reviev-form-field-policy">
+              <input
+                class="reviev-form-checkbox-policy"
+                type="checkbox"
+                name="user_policy"
+                required
+              />
+              <svg
+                class="reviev-form-own-checkbox"
+                width="16"
+                height="16"
+                aria-label="checkbox"
+              >
+                <use
+                  class="reviev-form-own-checkbox-icon"
+                  href="./images/icons.svg#icon-Vector"
+                ></use>
+              </svg>
+              I accept the terms and conditions of the &nbsp;
+              <a class="reviev-form-own-checkbox-link">Privacy Policy</a>
+            </label>
+
+            <button class="reviev-form-btn" type="submit">Send</button>
+          </div>
         </form>
       </div>
     </div>
