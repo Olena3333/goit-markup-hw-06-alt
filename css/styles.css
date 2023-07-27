@@ -844,6 +844,9 @@ button {
   display: flex;
   flex-direction: column;
 }
+.review-form-wrapper {
+  margin-bottom: 8px;
+}
 
 .reviev-form-discription {
   margin-bottom: 16px;
