@@ -844,7 +844,6 @@ button {
 .review-form {
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 .review-form-wrapper {
   margin-bottom: 8px;
@@ -891,6 +890,8 @@ button {
   margin-bottom: 16px;
 }
 .review-form-wrapper-policy {
+  display: block;
+  justify-content: center;
   margin-bottom: 24px;
 }
 .reviev-form-field {
@@ -984,7 +985,6 @@ button {
 
 .reviev-form-btn {
   display: block;
-  position: absolute;
   width: 169px;
   height: 56px;
   margin: auto;
