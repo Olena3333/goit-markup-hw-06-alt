@@ -624,7 +624,7 @@ button {
 }
 .reviev-form-foter-icon {
   fill: #ffffff;
-  margin-left: 16px;
+  margin-left: 16p;
 }
 
 /* ================ Portfolio ================ */
@@ -894,12 +894,11 @@ button {
 }
 .reviev-form-field {
   display: block;
-  color: #8e8f99;
+  color: var(--navyblue-modal);
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   margin-bottom: 4px;
-  color: var(--navyblue-moda);
 }
 .reviev-form-field-deskription {
   display: block;
@@ -925,8 +924,11 @@ button {
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
-  font-size: 18px;
-  color: var(--navyblue-moda);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  outline: transparent;
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
