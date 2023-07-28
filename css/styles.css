@@ -864,7 +864,7 @@ button {
   padding-left: 38px;
   outline: transparent;
   border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
-  padding-left: 36px;
+
   margin-bottom: 4px;
   color: #8e8f99;
   background-color: transparent;
@@ -886,6 +886,7 @@ button {
 }
 .reviev-form-field {
   display: block;
+  color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
