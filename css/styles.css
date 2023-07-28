@@ -624,7 +624,7 @@ button {
 }
 .reviev-form-foter-icon {
   fill: #ffffff;
-  margin-left: 16p;
+  margin-left: 16px;
 }
 
 /* ================ Portfolio ================ */
@@ -896,7 +896,7 @@ button {
 }
 .reviev-form-field {
   display: block;
-  color: var(--navyblue-modal);
+  color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
