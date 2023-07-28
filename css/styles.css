@@ -896,7 +896,7 @@ button {
   margin-bottom: 24px;
 }
 .reviev-form-field {
-  display: inline-flex;
+  display: block;
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
@@ -953,7 +953,7 @@ button {
   appearance: none;
 }
 .reviev-form-field-policy {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   font-size: 12px;
   line-height: 1.17; /* 116.667% */
