@@ -605,7 +605,7 @@ button {
   color: #ffffff;
 }
 .footer-subscribe-form-btn {
-  position: static;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -622,10 +622,11 @@ button {
   border: none;
   border-radius: 4px;
 }
-.reviev-form-field-icon {
+.reviev-form-foter-icon {
+  fill: #ffffff;
   margin-left: 16px;
-  fill: var(--hero-tatle-color);
 }
+
 /* ================ Portfolio ================ */
 .main-portfolio {
   padding-top: 96px;
@@ -887,6 +888,9 @@ button {
 }
 .review-form-wrapper-comment {
   margin-bottom: 16px;
+}
+.review-form-wrapper-policy {
+  margin-bottom: 24px;
 }
 .reviev-form-field {
   display: block;
