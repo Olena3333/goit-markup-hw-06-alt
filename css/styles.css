@@ -893,7 +893,6 @@ button {
 .review-form-wrapper-policy {
   display: block;
   justify-content: center;
-  margin-bottom: 24px;
 }
 .reviev-form-field {
   display: block;
@@ -993,6 +992,7 @@ button {
   fill: #f4f4fd;
   display: none;
 }
+/*
 .reviev-form-checkbox-policy:checked + .reviev-form-own-checkbox {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
@@ -1000,6 +1000,7 @@ button {
 .reviev-form-checkbox-policy:checked + .reviev-form-own-checkbox use {
   fill: #f4f4fd;
 }
+*/
 .reviev-form-own-checkbox-link {
   color: var(--iris, #4d5ae5);
   line-height: 16px;
@@ -1009,8 +1010,8 @@ button {
 .reviev-form-checkbox-policy:checked
   + .reviev-form-field-policy
   .reviev-form-own-checkbox {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
+  background-color: #404bbf;
+  border: none;
   fill: #f4f4fd;
 }
 
