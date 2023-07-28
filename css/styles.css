@@ -893,6 +893,7 @@ button {
 .review-form-wrapper-policy {
   display: block;
   justify-content: center;
+  margin-bottom: 24px;
 }
 .reviev-form-field {
   display: block;
@@ -958,7 +959,6 @@ button {
   line-height: 1.17; /* 116.667% */
 
   letter-spacing: 0.48px;
-  margin-bottom: 24px;
 }
 .reviev-form-own-checkbox {
   display: inline-flex;
