@@ -902,7 +902,6 @@ button {
   margin-bottom: 4px;
 }
 .reviev-form-field-deskription {
-  display: block;
   margin-bottom: 4px;
   font-size: 12px;
   color: #8e8f99;
@@ -970,11 +969,13 @@ button {
   cursor: pointer;
   margin-right: 8px;
   padding: 2px;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubvscode-file://vscode-app/c:/Users/helen/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.htmlic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .reviev {
+  fill: #f4f4fd;
 }
 /*.checkbox-wrapper {
   display: inline-flex;
@@ -985,10 +986,14 @@ button {
  
   fill: transparent;
 }*/
-
+.ffff {
+  width: 200px;
+  height: 200px;
+  background-color: #404bbf;
+}
 .reviev-form-own-checkbox-icon {
   fill: #f4f4fd;
-  display: none;
+
 }
 /*
 .reviev-form-checkbox-policy:checked + .reviev-form-own-checkbox {
@@ -1010,7 +1015,7 @@ button {
   .reviev-form-own-checkbox {
   background-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
+  fill: currentColor;
 }
 
 .reviev-form-btn {
