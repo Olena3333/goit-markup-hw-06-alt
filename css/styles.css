@@ -896,7 +896,7 @@ button {
   margin-bottom: 24px;
 }
 .reviev-form-field {
-  display: block;
+  display: inline-flex;
   color: #8e8f99;
   font-size: 12px;
   line-height: 1.17;
