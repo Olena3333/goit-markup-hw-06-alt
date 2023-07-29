@@ -954,8 +954,9 @@ button {
   align-items: center;
   font-size: 12px;
   line-height: 1.17; /* 116.667% */
-
   letter-spacing: 0.48px;
+  color: #8e8f99;
+  margin-bottom: 4px;
 }
 .reviev-form-own-checkbox {
   width: 16px;
@@ -976,20 +977,7 @@ button {
 .reviev {
   fill: #f4f4fd;
 }
-/*.checkbox-wrapper {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  
-  
- 
-  fill: transparent;
-}*/
-.ffff {
-  width: 200px;
-  height: 200px;
-  background-color: #404bbf;
-}
+
 .reviev-form-own-checkbox-icon {
   fill: #f4f4fd;
 }
