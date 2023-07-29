@@ -950,8 +950,6 @@ button {
   appearance: none;
 }
 .reviev-form-field-policy {
-  display: inline-flex;
-  align-items: center;
   font-size: 12px;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.48px;
